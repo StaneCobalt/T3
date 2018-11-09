@@ -35,6 +35,10 @@ class t3 {
 		void printBoard();
 		void checkBoard();
 		void makeMove();
+		bool spotTaken(int n) {
+			return this->positions[n] == player || 
+					this->positions[n] == ai;
+		}
 };
 
 void t3::printBoard(){
@@ -75,6 +79,17 @@ void t3::checkBoard(){
 		(positions[2] == ai && positions[4] == ai && positions[6] == ai)) {
 		this->won = false;
 		this->gameOver = true;
+	}
+	else{
+		bool fullBoard = true;
+		for(short i = 0; i < size; i++){
+			if(this->positions[i] == this->empty)
+				fullBoard = false;
+		}
+		if(fullBoard){
+			this->won = false;
+			this->gameOver = true;
+		}
 	}
 }
 

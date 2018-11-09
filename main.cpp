@@ -38,6 +38,12 @@ int main(int argc, char** argv){
 		ticTacToe.printBoard();
 		std::cout << "Make a move by selecting a space (0-8): ";
 		std::cin >> input;
+		if(ticTacToe.spotTaken(input)){
+			while(ticTacToe.spotTaken(input)){
+				std::cout << "\nSpot taken. Try again: ";
+				std::cin >> input;
+			}
+		}
 		ticTacToe.setPosition(true, input);
 		ticTacToe.checkBoard();
 		if(ticTacToe.getGameOver())
