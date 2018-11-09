@@ -2,6 +2,7 @@
 #include <string>
 #include <stdlib.h>
 #include <time.h>
+#include "t3.h"
 
 #ifdef _WIN32
 	void clearScreen(){
@@ -25,64 +26,38 @@
 	
 #endif
 
-void printBoard();
-void checkBoard();
-void makeMove();
-
-char positions[9] = {'-','-','-','-','-','-','-','-','-'};
-char aiChar;
-char playerChar;
-
 int main(int argc, char** argv){
 	srand(time(0));
-	const std::string title = "\n -------------------------\n| Tic-Tac-Toe |\n -------------------------\n\n";
-	bool gameOver = false;
+	const std::string title = "\n -------------\n| Tic-Tac-Toe |\n -------------\n\n";
 	int input = 0;
-	clearScreen();
-	std::cout << title << "\n Choose X or O: ";
-	std::cin >> playerChar;
-	aiChar = (playerChar == 'x' || playerChar == 'X') ? 'O' : 'X';
-	
-	while(!gameOver){
+	t3 ticTacToe;
+
+	while(!ticTacToe.getGameOver()){
 		clearScreen();
 		std::cout << title;
-		printBoard();
-		std::cout << "Make a move by selecting a space (1-9): ";
+		ticTacToe.printBoard();
+		std::cout << "Make a move by selecting a space (0-8): ";
 		std::cin >> input;
-		positions[input] = playerChar;
-		makeMove();
+		ticTacToe.setPosition(true, input);
+		ticTacToe.checkBoard();
+		if(ticTacToe.getGameOver())
+			break;
+		else {
+			ticTacToe.makeMove();
+			ticTacToe.checkBoard();
+		}
+	}
+
+	clearScreen();
+	std::cout << title;
+	ticTacToe.printBoard();
+	if(ticTacToe.getWon()){
+		std::cout << "Congratulations! You won!\n";
+	} else {
+		std::cout << "Game Over. Try again.\n";
 	}
 	
+	system("pause");
+
 	return 0;
-}
-
-void printBoard(){
-	std::string s(11,' ');
-	for(int i = 0; i < 9; i+=3){
-		s = " ";
-		s.append(positions[i]);
-		s += " | ";
-		s.append(positions[i+1]);
-		s += " | ";
-		s.append(positions[i+2]);
-
-		if(i <= 3)
-			std::cout << "---|---|---";
-	}
-	std::cout << std::endl;
-}
-
-void checkBoard(){
-	//checks if the player or ai has won
-}
-
-void makeMove(){
-	int randomSpace;
-	bool taken = true;
-	while(taken){
-		randomSpace = (rand()%9);
-		if(positions[randomSpace] == '-')
-			taken = false;
-	}
-	positions[randomSpace] = aiChar;
 }
