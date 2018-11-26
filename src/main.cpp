@@ -2,7 +2,7 @@
 #include <string>
 #include <stdlib.h>
 #include <time.h>
-#include "t3.h"
+#include "../include/t3.h"
 
 #ifdef _WIN32
 	void clearScreen(){
