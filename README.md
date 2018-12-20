@@ -4,8 +4,7 @@ A Tic-Tac-Toe game done console style.
 This is a fun project done just to do something in C++.
 The AI isn't very smart, it just selects an open space at random, so the game is fairly beatable.
 
-##### Screenshot
-<img src="img/t3_win.PNG" width="50%" />
+<img src="img/gameplay.gif" width="50%" />
 
 ## How to Play
 Make sure you have gcc installed. MinGW is a good option if you don't have gcc already.
