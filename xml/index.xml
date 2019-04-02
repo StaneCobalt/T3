@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.15">
+  <compound refid="classt3" kind="class"><name>t3</name>
+    <member refid="classt3_1ac40d59cdd42430e87d3b691433b9ffcc" kind="variable"><name>size</name></member>
+    <member refid="classt3_1abe94bd45f430719879b1101f02b48709" kind="variable"><name>empty</name></member>
+    <member refid="classt3_1a93aa176df4edc045e87c28952bec402c" kind="variable"><name>positions</name></member>
+    <member refid="classt3_1a010ba20543589a685a946022c372c491" kind="variable"><name>ai</name></member>
+    <member refid="classt3_1adab4ba8bf47fcd10d886ad4e4454be58" kind="variable"><name>player</name></member>
+    <member refid="classt3_1aff5d7caeaeb6918f229fccb04e666fc3" kind="variable"><name>gameOver</name></member>
+    <member refid="classt3_1acbaffd781576e43e9972183525d01b0e" kind="variable"><name>won</name></member>
+    <member refid="classt3_1a0ea557504d7801b2b448a18b03d53024" kind="function"><name>t3</name></member>
+    <member refid="classt3_1a2a9354c62aeff12169882fe743fe4aff" kind="function"><name>getGameOver</name></member>
+    <member refid="classt3_1a610e5036f83c83688903dd4842f4e187" kind="function"><name>getWon</name></member>
+    <member refid="classt3_1ad13794cb12de54dbbc504ca6d669a335" kind="function"><name>getPosition</name></member>
+    <member refid="classt3_1aa74657c5fd3a815a98ece96fbe5919e4" kind="function"><name>setPosition</name></member>
+    <member refid="classt3_1a8c7aa88e04844eb0e09c2968a591817d" kind="function"><name>printBoard</name></member>
+    <member refid="classt3_1a999cd66795201c7b70515787bd45e7cd" kind="function"><name>checkBoard</name></member>
+    <member refid="classt3_1a538fe1a0cbe84cfac7389aa7f273779b" kind="function"><name>makeMove</name></member>
+    <member refid="classt3_1a1dfb070e615709862f04b15abdaf1c90" kind="function"><name>spotTaken</name></member>
+  </compound>
+  <compound refid="t3_8h" kind="file"><name>t3.h</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a9d7e8af417b6d543da691e9c0e2f6f9f" kind="function"><name>clearScreen</name></member>
+    <member refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="t3_8cpp" kind="file"><name>t3.cpp</name>
+  </compound>
+  <compound refid="md__r_e_a_d_m_e" kind="page"><name>md_README</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="t3_8cpp" kind="file" language="C++">
+    <compoundname>t3.cpp</compoundname>
+    <includes refid="t3_8h" local="yes">../include/t3.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">time.h</includes>
+    <incdepgraph>
+      <node id="18">
+        <label>stdlib.h</label>
+      </node>
+      <node id="16">
+        <label>string</label>
+      </node>
+      <node id="15">
+        <label>../include/t3.h</label>
+        <link refid="t3_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>time.h</label>
+      </node>
+      <node id="14">
+        <label>src/t3.cpp</label>
+        <link refid="t3_8cpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;../include/t3.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classt3_1a2a9354c62aeff12169882fe743fe4aff" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classt3_1a2a9354c62aeff12169882fe743fe4aff" kindref="member">t3::getGameOver</ref>()<sp/>{<sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;gameOver;<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classt3_1a610e5036f83c83688903dd4842f4e187" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classt3_1a610e5036f83c83688903dd4842f4e187" kindref="member">t3::getWon</ref>()<sp/>{<sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;won;<sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classt3_1ad13794cb12de54dbbc504ca6d669a335" refkind="member"><highlight class="normal">std::string<sp/><ref refid="classt3_1ad13794cb12de54dbbc504ca6d669a335" kindref="member">t3::getPosition</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n){</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(n<sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/>n<sp/>&lt;<sp/>9)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;positions[n];</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classt3_1aa74657c5fd3a815a98ece96fbe5919e4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classt3_1aa74657c5fd3a815a98ece96fbe5919e4" kindref="member">t3::setPosition</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isPlayer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n){</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;positions[n]<sp/>=<sp/>(isPlayer)<sp/>?<sp/>this-&gt;player<sp/>:<sp/>this-&gt;ai;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="classt3_1a8c7aa88e04844eb0e09c2968a591817d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classt3_1a8c7aa88e04844eb0e09c2968a591817d" kindref="member">t3::printBoard</ref>(){</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>s(11,</highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>this-&gt;size;<sp/>i+=3){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>this-&gt;positions[i]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>|<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>this-&gt;positions[i+1]<sp/>+<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/>|<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>this-&gt;positions[i+2]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>s;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(i<sp/>&lt;=<sp/>3)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;---|---|---\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classt3_1a999cd66795201c7b70515787bd45e7cd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classt3_1a999cd66795201c7b70515787bd45e7cd" kindref="member">t3::checkBoard</ref>(){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//checks<sp/>if<sp/>the<sp/>player<sp/>or<sp/>ai<sp/>has<sp/>won</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>0<sp/>1<sp/>2</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3<sp/>4<sp/>5</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6<sp/>7<sp/>8<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((positions[0]<sp/>==<sp/>player<sp/>&amp;&amp;<sp/>positions[1]<sp/>==<sp/>player<sp/>&amp;&amp;<sp/>positions[2]<sp/>==<sp/>player)<sp/>||</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(positions[0]<sp/>==<sp/>player<sp/>&amp;&amp;<sp/>positions[3]<sp/>==<sp/>player<sp/>&amp;&amp;<sp/>positions[6]<sp/>==<sp/>player)<sp/>||</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(positions[0]<sp/>==<sp/>player<sp/>&amp;&amp;<sp/>positions[4]<sp/>==<sp/>player<sp/>&amp;&amp;<sp/>positions[8]<sp/>==<sp/>player)<sp/>||</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(positions[3]<sp/>==<sp/>player<sp/>&amp;&amp;<sp/>positions[4]<sp/>==<sp/>player<sp/>&amp;&amp;<sp/>positions[5]<sp/>==<sp/>player)<sp/>||</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(positions[6]<sp/>==<sp/>player<sp/>&amp;&amp;<sp/>positions[7]<sp/>==<sp/>player<sp/>&amp;&amp;<sp/>positions[8]<sp/>==<sp/>player)<sp/>||</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(positions[1]<sp/>==<sp/>player<sp/>&amp;&amp;<sp/>positions[4]<sp/>==<sp/>player<sp/>&amp;&amp;<sp/>positions[7]<sp/>==<sp/>player)<sp/>||</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(positions[2]<sp/>==<sp/>player<sp/>&amp;&amp;<sp/>positions[5]<sp/>==<sp/>player<sp/>&amp;&amp;<sp/>positions[8]<sp/>==<sp/>player)<sp/>||</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(positions[2]<sp/>==<sp/>player<sp/>&amp;&amp;<sp/>positions[4]<sp/>==<sp/>player<sp/>&amp;&amp;<sp/>positions[6]<sp/>==<sp/>player))<sp/>{<sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;won<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;gameOver<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((positions[0]<sp/>==<sp/>ai<sp/>&amp;&amp;<sp/>positions[1]<sp/>==<sp/>ai<sp/>&amp;&amp;<sp/>positions[2]<sp/>==<sp/>ai)<sp/>||</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(positions[0]<sp/>==<sp/>ai<sp/>&amp;&amp;<sp/>positions[3]<sp/>==<sp/>ai<sp/>&amp;&amp;<sp/>positions[6]<sp/>==<sp/>ai)<sp/>||</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(positions[0]<sp/>==<sp/>ai<sp/>&amp;&amp;<sp/>positions[4]<sp/>==<sp/>ai<sp/>&amp;&amp;<sp/>positions[8]<sp/>==<sp/>ai)<sp/>||</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(positions[3]<sp/>==<sp/>ai<sp/>&amp;&amp;<sp/>positions[4]<sp/>==<sp/>ai<sp/>&amp;&amp;<sp/>positions[5]<sp/>==<sp/>ai)<sp/>||</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(positions[6]<sp/>==<sp/>ai<sp/>&amp;&amp;<sp/>positions[7]<sp/>==<sp/>ai<sp/>&amp;&amp;<sp/>positions[8]<sp/>==<sp/>ai)<sp/>||</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(positions[1]<sp/>==<sp/>ai<sp/>&amp;&amp;<sp/>positions[4]<sp/>==<sp/>ai<sp/>&amp;&amp;<sp/>positions[7]<sp/>==<sp/>ai)<sp/>||</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(positions[2]<sp/>==<sp/>ai<sp/>&amp;&amp;<sp/>positions[5]<sp/>==<sp/>ai<sp/>&amp;&amp;<sp/>positions[8]<sp/>==<sp/>ai)<sp/>||</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(positions[2]<sp/>==<sp/>ai<sp/>&amp;&amp;<sp/>positions[4]<sp/>==<sp/>ai<sp/>&amp;&amp;<sp/>positions[6]<sp/>==<sp/>ai))<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;won<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;gameOver<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>fullBoard<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>size;<sp/>i++){</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;positions[i]<sp/>==<sp/>this-&gt;empty)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fullBoard<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(fullBoard){</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;won<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;gameOver<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="classt3_1a538fe1a0cbe84cfac7389aa7f273779b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classt3_1a538fe1a0cbe84cfac7389aa7f273779b" kindref="member">t3::makeMove</ref>(){</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>randomSpace;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>taken<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(taken){</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>randomSpace<sp/>=<sp/>(rand()<sp/>%<sp/>9);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(positions[randomSpace]<sp/>==<sp/>this-&gt;empty)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>taken<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classt3_1aa74657c5fd3a815a98ece96fbe5919e4" kindref="member">setPosition</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>randomSpace);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classt3_1a1dfb070e615709862f04b15abdaf1c90" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classt3_1a1dfb070e615709862f04b15abdaf1c90" kindref="member">t3::spotTaken</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;positions[n]<sp/>==<sp/>player<sp/>||<sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;positions[n]<sp/>==<sp/>ai;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/t3.cpp"/>
+  </compounddef>
+</doxygen>

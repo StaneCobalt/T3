@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classt3" kind="class" language="C++" prot="public">
+    <compoundname>t3</compoundname>
+    <includes refid="t3_8h" local="no">t3.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classt3_1ac40d59cdd42430e87d3b691433b9ffcc" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int t3::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <initializer>= 9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/t3.h" line="8" column="1" bodyfile="include/t3.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classt3_1abe94bd45f430719879b1101f02b48709" prot="private" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string t3::empty</definition>
+        <argsstring></argsstring>
+        <name>empty</name>
+        <initializer>= &quot;-&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/t3.h" line="9" column="1" bodyfile="include/t3.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classt3_1a93aa176df4edc045e87c28952bec402c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string t3::positions[size]</definition>
+        <argsstring>[size]</argsstring>
+        <name>positions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/t3.h" line="10" column="1" bodyfile="include/t3.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classt3_1a010ba20543589a685a946022c372c491" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string t3::ai</definition>
+        <argsstring></argsstring>
+        <name>ai</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/t3.h" line="11" column="1" bodyfile="include/t3.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classt3_1adab4ba8bf47fcd10d886ad4e4454be58" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string t3::player</definition>
+        <argsstring></argsstring>
+        <name>player</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/t3.h" line="11" column="1" bodyfile="include/t3.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classt3_1aff5d7caeaeb6918f229fccb04e666fc3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool t3::gameOver</definition>
+        <argsstring></argsstring>
+        <name>gameOver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/t3.h" line="12" column="1" bodyfile="include/t3.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classt3_1acbaffd781576e43e9972183525d01b0e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool t3::won</definition>
+        <argsstring></argsstring>
+        <name>won</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/t3.h" line="12" column="1" bodyfile="include/t3.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classt3_1a0ea557504d7801b2b448a18b03d53024" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>t3::t3</definition>
+        <argsstring>()</argsstring>
+        <name>t3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/t3.h" line="14" column="1" bodyfile="include/t3.h" bodystart="14" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classt3_1a2a9354c62aeff12169882fe743fe4aff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool t3::getGameOver</definition>
+        <argsstring>()</argsstring>
+        <name>getGameOver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/t3.h" line="22" column="1" bodyfile="src/t3.cpp" bodystart="7" bodyend="9"/>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="29" endline="69">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classt3_1a610e5036f83c83688903dd4842f4e187" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool t3::getWon</definition>
+        <argsstring>()</argsstring>
+        <name>getWon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/t3.h" line="23" column="1" bodyfile="src/t3.cpp" bodystart="11" bodyend="13"/>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="29" endline="69">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classt3_1ad13794cb12de54dbbc504ca6d669a335" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string t3::getPosition</definition>
+        <argsstring>(int n)</argsstring>
+        <name>getPosition</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/t3.h" line="24" column="1" bodyfile="src/t3.cpp" bodystart="15" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classt3_1aa74657c5fd3a815a98ece96fbe5919e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void t3::setPosition</definition>
+        <argsstring>(bool isPlayer, int n)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>bool</type>
+          <declname>isPlayer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/t3.h" line="25" column="1" bodyfile="src/t3.cpp" bodystart="21" bodyend="23"/>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="29" endline="69">main</referencedby>
+        <referencedby refid="classt3_1a538fe1a0cbe84cfac7389aa7f273779b" compoundref="t3_8cpp" startline="77" endline="86">makeMove</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classt3_1a8c7aa88e04844eb0e09c2968a591817d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void t3::printBoard</definition>
+        <argsstring>()</argsstring>
+        <name>printBoard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/t3.h" line="26" column="1" bodyfile="src/t3.cpp" bodystart="25" bodyend="35"/>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="29" endline="69">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classt3_1a999cd66795201c7b70515787bd45e7cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void t3::checkBoard</definition>
+        <argsstring>()</argsstring>
+        <name>checkBoard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/t3.h" line="27" column="1" bodyfile="src/t3.cpp" bodystart="37" bodyend="75"/>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="29" endline="69">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classt3_1a538fe1a0cbe84cfac7389aa7f273779b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void t3::makeMove</definition>
+        <argsstring>()</argsstring>
+        <name>makeMove</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/t3.h" line="28" column="1" bodyfile="src/t3.cpp" bodystart="77" bodyend="86"/>
+        <references refid="classt3_1aa74657c5fd3a815a98ece96fbe5919e4" compoundref="t3_8cpp" startline="21" endline="23">setPosition</references>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="29" endline="69">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classt3_1a1dfb070e615709862f04b15abdaf1c90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool t3::spotTaken</definition>
+        <argsstring>(int n)</argsstring>
+        <name>spotTaken</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/t3.h" line="29" column="1" bodyfile="src/t3.cpp" bodystart="88" bodyend="91"/>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="29" endline="69">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>t3</label>
+        <link refid="classt3"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/t3.h" line="6" column="1" bodyfile="include/t3.h" bodystart="6" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classt3_1a010ba20543589a685a946022c372c491" prot="private" virt="non-virtual"><scope>t3</scope><name>ai</name></member>
+      <member refid="classt3_1a999cd66795201c7b70515787bd45e7cd" prot="public" virt="non-virtual"><scope>t3</scope><name>checkBoard</name></member>
+      <member refid="classt3_1abe94bd45f430719879b1101f02b48709" prot="private" virt="non-virtual"><scope>t3</scope><name>empty</name></member>
+      <member refid="classt3_1aff5d7caeaeb6918f229fccb04e666fc3" prot="private" virt="non-virtual"><scope>t3</scope><name>gameOver</name></member>
+      <member refid="classt3_1a2a9354c62aeff12169882fe743fe4aff" prot="public" virt="non-virtual"><scope>t3</scope><name>getGameOver</name></member>
+      <member refid="classt3_1ad13794cb12de54dbbc504ca6d669a335" prot="public" virt="non-virtual"><scope>t3</scope><name>getPosition</name></member>
+      <member refid="classt3_1a610e5036f83c83688903dd4842f4e187" prot="public" virt="non-virtual"><scope>t3</scope><name>getWon</name></member>
+      <member refid="classt3_1a538fe1a0cbe84cfac7389aa7f273779b" prot="public" virt="non-virtual"><scope>t3</scope><name>makeMove</name></member>
+      <member refid="classt3_1adab4ba8bf47fcd10d886ad4e4454be58" prot="private" virt="non-virtual"><scope>t3</scope><name>player</name></member>
+      <member refid="classt3_1a93aa176df4edc045e87c28952bec402c" prot="private" virt="non-virtual"><scope>t3</scope><name>positions</name></member>
+      <member refid="classt3_1a8c7aa88e04844eb0e09c2968a591817d" prot="public" virt="non-virtual"><scope>t3</scope><name>printBoard</name></member>
+      <member refid="classt3_1aa74657c5fd3a815a98ece96fbe5919e4" prot="public" virt="non-virtual"><scope>t3</scope><name>setPosition</name></member>
+      <member refid="classt3_1ac40d59cdd42430e87d3b691433b9ffcc" prot="private" virt="non-virtual"><scope>t3</scope><name>size</name></member>
+      <member refid="classt3_1a1dfb070e615709862f04b15abdaf1c90" prot="public" virt="non-virtual"><scope>t3</scope><name>spotTaken</name></member>
+      <member refid="classt3_1a0ea557504d7801b2b448a18b03d53024" prot="public" virt="non-virtual"><scope>t3</scope><name>t3</name></member>
+      <member refid="classt3_1acbaffd781576e43e9972183525d01b0e" prot="private" virt="non-virtual"><scope>t3</scope><name>won</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
